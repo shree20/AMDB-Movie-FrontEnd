@@ -1,6 +1,7 @@
 
 export const getMovies = (title, callback)=>{
 
+  //  const env = process.env.NODE_ENV
     const headers = { 
         // 'Content-Type': 'application/json',
          'Origin': 'http://localhost:3000'
