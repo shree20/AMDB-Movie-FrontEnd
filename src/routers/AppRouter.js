@@ -4,6 +4,7 @@ import { createBrowserHistory } from 'history';
 import App from '../App';
 import AddMovie from '../components/AddMovie'
 import EditMovie from '../components/EditMovie';
+import LoginPage from '../components/Login'
 
 export const history = createBrowserHistory()
 
@@ -12,7 +13,7 @@ const AppRouter = ()=>{
  <Router history={history}>
     <div>
     <Switch>
-    <Route path="/"  component={App} exact={true} />
+    <Route path="/"  component={LoginPage} exact={true} />
     <Route path="/dashboard" component={App} exact={true} />
     <Route path="/create" component={AddMovie} />
     <Route path="/edit/:id" component={EditMovie} />

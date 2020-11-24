@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
+  
  }
   
  .title, .year {
@@ -92,6 +92,7 @@ margin: -31px;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  cursor: pointer;
   
 }
  /* .list-item {

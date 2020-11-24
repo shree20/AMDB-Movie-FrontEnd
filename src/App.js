@@ -43,7 +43,11 @@ class App extends React.Component {
         
          {/* <h1>Welcome to AMDB</h1> */}
             <div className="page-header__actions">
-            <Link className="button" to="/create">Add Movie</Link>
+          {
+             sessionStorage.getItem("isAdmin") && <Link className="button" to="/create">Add Movie</Link>
+
+          }    
+          {/* <Link className="button" to="/create">Add Movie</Link> */}
           </div>
              <Search handleSendRequest={this.sendRequest}/>
              {
