@@ -7,7 +7,7 @@ import Header from './Header'
 class AddMovie extends React.Component {
     onSubmit = (movie) => {
         startAddMovie(movie)
-        this.props.history.push('/')
+        this.props.history.push('/dashboard')
     }
 
 

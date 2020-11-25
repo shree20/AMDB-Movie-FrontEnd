@@ -6,12 +6,12 @@ import Header from './Header'
 class EditMovie extends React.Component {
     onSubmit = (movie) => {
         startEditMovie(this.props.location.state.movie.id, movie)
-        this.props.history.push('/')
+        this.props.history.push('/dashboard')
     }
 
     onRemove = () => {
         startRemoveMovie(this.props.location.state.movie.id)
-        this.props.history.push('/')
+        this.props.history.push('/dashboard')
     }
 
     render() {

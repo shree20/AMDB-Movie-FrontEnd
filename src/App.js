@@ -5,6 +5,7 @@ import Movie from './components/Movie'
 import Search from './components/Search'
 import {Link} from 'react-router-dom'
 import { getMovies } from './actions/movies';
+import {LoadingIndicator} from './components/LoadingIndicator'
 
 class App extends React.Component {
 
@@ -50,8 +51,9 @@ class App extends React.Component {
           {/* <Link className="button" to="/create">Add Movie</Link> */}
           </div>
              <Search handleSendRequest={this.sendRequest}/>
+             <LoadingIndicator />
              {
-
+                
                     this.state.movies.map((movie) => {
                       return <Movie key={movie.id} {...movie}/>
                     })
